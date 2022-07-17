@@ -10,5 +10,4 @@ def all_projects(request):
 
 def project_detail(request, pk):
     project = Project.objects.get(pk=pk)
-    return render(request, 'projects/detail.html', 
-                    {'project':project})
+    return render(request, 'projects/detail.html', {'project':project})
