@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-dtfi)#tme&e7e4*gns_%0-y3y=+7psesx8qdj3pto8!zk5lo!c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['teppsec.eu.pythonanywhere.com']
-
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -40,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # my apps
     'projects',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +59,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # change for templates
         'DIRS': [os.path.join(BASE_DIR, 'projects/templates'),
+                os.path.join(BASE_DIR, 'blog/templates'),
                 ],
         'APP_DIRS': True,
         'OPTIONS': {
