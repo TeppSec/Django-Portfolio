@@ -8,8 +8,29 @@
         <div class="text-center">
             <h1 class="text-dark">Blog Index</h1>
         </div>
-        
         <div class="row">
-            
+            <div class="card mb-3">
+                <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem soluta ea totam facilis repudiandae eveniet nihil assumenda? Distinctio ea tempore facilis nostrum consequuntur natus voluptatibus odit dolorem non provident reprehenderit beatae libero, hic, modi unde quae. Quos voluptatem tempora ex tempore autem veritatis sint hic omnis? A fuga saepe et odio nam sed illo ex optio suscipit beatae repellendus aut officia, voluptate alias minus blanditiis dicta, tenetur veniam magni quasi dolor, cum pariatur consequatur! Quam facilis in non cum! Aliquam inventore commodi id, voluptatibus optio dicta, rem est ut unde repellat esse dolor, consectetur ad illo adipisci. Laboriosam, odit provident!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
         </div>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="user_name" class="form-label">User:</label>
+              <input type="text" class="form-control" id="user_name" required>
+            </div>
+            <div class="mb-3">
+              <label for="comment" class="form-label">Comment:</label>
+              <textarea class="form-control" id="comment" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         {% endblock  %}

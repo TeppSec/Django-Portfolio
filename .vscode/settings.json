@@ -1,0 +1,6 @@
+{   "python.condaPath": "/opt/miniconda3/bin/conda",
+    "python.defaultInterpreterPath": "/opt/miniconda3/bin/python",
+    "python.pythonPath": "/opt/miniconda3/bin/python",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+}
